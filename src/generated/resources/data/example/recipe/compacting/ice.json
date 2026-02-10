@@ -1,6 +1,6 @@
 {
   "type": "create:compacting",
-  "heat_requirement": "example:iced",
+  "heat_requirement": "create:none",
   "ingredients": [
     {
       "type": "neoforge:single",

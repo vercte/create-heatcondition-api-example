@@ -1,4 +1,4 @@
 {
-  "example.recipe.heat_requirement.low_heated": "Low-Heated",
-  "example.recipe.heat_requirement.iced": "Iced"
+  "create.recipe.heat_requirement.example.low_heated": "Low-Heated",
+  "create.recipe.heat_requirement.example.iced": "Iced"
 }

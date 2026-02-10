@@ -12,6 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class IcedCondition implements HeatCondition {
+    private List<ItemStack> itemHints = null;
+
     @Override
     public boolean test(Level level, BlockPos blockPos) {
         BlockState below = level.getBlockState(blockPos.below());
@@ -19,15 +21,10 @@ public class IcedCondition implements HeatCondition {
     }
 
     @Override
-    public String getTranslationKey() {
-        return "example.recipe.heat_requirement.iced";
-    }
-
-    @Override
     public @NotNull List<ItemStack> getItemHints() {
-        return List.of(
-                new ItemStack(Items.BLUE_ICE)
-        );
+        if(itemHints == null)
+            this.itemHints = List.of(new ItemStack(Items.BLUE_ICE));
+        return itemHints;
     }
 
     @Override

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "example:iced",
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 750,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:powder_snow_bucket"
+    }
+  ]
+}
